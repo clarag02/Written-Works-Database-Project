@@ -7,6 +7,14 @@ All Phase 1 Code, Scripts and Documents are included in this submission. To acce
 ## Phase 2 
 Phase 2 entailed migrating the relational database to a MongoDB database. All Phase 2 Code, Scripts and Documents are included in Phase 2 folder.
 
+## Relational Data model 
+![image](https://github.com/clarag02/Written-Works-Database-Project/assets/93838227/0a3e8448-cc49-472c-9ff5-2af68b3b1183)
+
+
+## Non Relational Data model 
+![image](https://github.com/clarag02/Written-Works-Database-Project/assets/93838227/415442d8-11de-4ecb-b59a-fcacdf3fb582)
+
+
 ## Overview
 Our team has chosen to implement a relational database on the topic of written works. A
 written work is considered any piece of writing, which can be either books or journal articles.
