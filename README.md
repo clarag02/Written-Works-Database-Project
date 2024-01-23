@@ -19,6 +19,7 @@ articles contain DOI. Furthermore, this type of inheritance model requires the t
 contain a field for the type of the entity of each row. In our system, the Works table has a field
 called work_type which either contains a ‘b’ or a ‘j’ representing book and journal article
 respectively.
+
 The weak entity in our system is the Character entity. The Book entity, its owner entity
 set, and Character entity participate in a one-to-many relationship, that is a book may have many
 characters but a character only belongs to one book. Character entity also has a total participation
@@ -26,6 +27,7 @@ constraint and is uniquely identified by its partial key character_id. Thus, a C
 be identified uniquely only by considering the primary key of the Book entity. There is a
 whole-part relationship, in which if a record of a book is deleted, then the characters belonging to
 that book must also be deleted.
+
 A publisher, who can be uniquely identified by their publisher_id, can publish many
 works and a work can have many publishers (many-to-many relationship). In addition to this,
 every work must be published by a publisher (total participation). Furthermore, similar to the
@@ -39,6 +41,7 @@ work_publishers, work_authors, and work_subjects. All of these tables contain a 
 work_id, referencing the id in the Work table, and the foreign key subject_id, author_id,
 subject_id referencing the corresponding primary key ‘id’ in the table of Publishers, Authors,
 and Subjects respectively. Thus, the association tables in our system will hold two foreign keys.
+
 Regarding the technical overview of our system, we used PostgreSQL as our sql
 database. We also used Ruby to write a script that helped us alter the data into a usable and
 consistent format throughout the system along with populating it into our postgres database.
@@ -51,7 +54,3 @@ DDLPhase1.sql. The DDL for inserting into tables can be found in the Ruby script
 works.rb. Since all of the data we used amounted to almost 1 GB, we were unable to include all
 of the files on our moodle submission. Instead we included a sample of about 100 files for both
 journal articles and books to give you an idea of the functionality of our system.
-
-## Presentation
-You can view the presentation in the zip folder. it is an mp4 file. Below is a link as well. </br>
-https://www.veed.io/view/09a511af-b037-48e1-9e6f-bb7cd0077302?sharingWidget=true&panel=share
